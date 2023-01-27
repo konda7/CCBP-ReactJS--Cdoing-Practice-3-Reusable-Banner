@@ -24,8 +24,8 @@ const bannerCardsList = [
 ]
 
 const App = () => (
-  <div>
-    <ul>
+  <div className="bg-container">
+    <ul className="card-container">
       {bannerCardsList.map(eachItem => (
         <BannerCardItem bannerDetails={eachItem} key={eachItem.id} />
       ))}
